@@ -3,12 +3,12 @@ resources:
 - name: hello-resource
   type: git
   source: 
-  - uri: https://github.com/uknadkarni/c1/hw.yml
+  - uri: git@github.com:uknadkarni/c1.git
 
 jobs:
 - name: hello-world
   plan: 
   - get: hello-resource
   - task: say-hello
-    file: tasks/hw.yml
+    file: tasks/hello-world/hw.yml
 
