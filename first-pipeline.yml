@@ -10,5 +10,5 @@ jobs:
   plan: 
   - get: hello-resource
   - task: say-hello
-    file: tasks/hello-world/hw.yml
+    file: hello-resource/tasks/hello-world/hw.yml
 
