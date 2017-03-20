@@ -1,0 +1,13 @@
+---
+resources:
+- name: hello-resource
+  type: git
+  source: https://github.com/nadkau-pivotal/concourse-demo
+
+jobs:
+- name: hello-world
+  plan: 
+  - get: hello-resource
+  - task: say-hello
+    file: hw.yml
+
